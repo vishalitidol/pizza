@@ -5,7 +5,7 @@ class FullScreenImage extends StatefulWidget {
   final imageUrls;
   final int initialIndex;
 
-  FullScreenImage({required this.imageUrls,required this.initialIndex});
+  const FullScreenImage({super.key, required this.imageUrls,required this.initialIndex});
 
   @override
   Scroll createState() => Scroll();
@@ -50,7 +50,7 @@ class FullScreenImage extends StatefulWidget {
               left: 16,
               bottom: 350,
             //top: MediaQuery.of(context).size.height / 2,
-              child: IconButton(icon: Icon(Icons.arrow_back),
+              child: IconButton(icon: const Icon(Icons.arrow_back_ios),
               onPressed: () {
                 if (currentindex < widget.imageUrls.length) {
                   _pageController.previousPage(
@@ -64,7 +64,7 @@ class FullScreenImage extends StatefulWidget {
             right: 16,
             bottom: 350,
             //top: MediaQuery.of(context).size.height / 2,
-            child: IconButton(icon: Icon(Icons.arrow_forward),
+            child: IconButton(icon: const Icon(Icons.arrow_forward_ios),
                 onPressed: () {
                   if (currentindex < widget.imageUrls.length * 1000) {
                     _pageController.nextPage(

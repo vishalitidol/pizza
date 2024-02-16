@@ -38,6 +38,16 @@ dependencies:
   http: ^1.1.0
   photo_view: ^0.14.0
   full_screen_image: ^2.0.0
+  firebase_core: ^2.24.2
+  firebase_crashlytics: any
+  firebase_auth: any
+  firebase_messaging: ^14.7.10
+  rxdart: ^0.27.7
+  flutter_local_notifications: ^16.3.2
+  flutter_foreground_task: ^6.1.2
+  logger: ^2.0.2+1
+  dio: ^5.4.0
+
 
 dev_dependencies:
   flutter_test:
